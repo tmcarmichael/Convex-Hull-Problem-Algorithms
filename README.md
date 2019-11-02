@@ -9,7 +9,7 @@
 
 * Python 'Timeit' module was used for evaluating the runtime of the four algorithms presented (two naive C++ translations, and two algorithms that utilize randomization). 
 
-### Instructions to time: 
+#### Instructions to time: 
 
 * Timeit timing is simple and can be done on CLI or by code modifications. Below is an example:
 
