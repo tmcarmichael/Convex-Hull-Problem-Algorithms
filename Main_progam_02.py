@@ -177,7 +177,7 @@ if __name__ == "__main__":
     # print(s.NaiveAlg1())
 
     # Uncomment line below for testing runtime
-    # timeit.timeit('s.NaiveAlg1()', setup='from __main__ import s', number=1000)
+    # timeit.timeit('s.NaiveAlg1()', setup='from __main__ import s', number=1)
 
     """
     Method 2: Testing NaiveAlg2
@@ -186,7 +186,7 @@ if __name__ == "__main__":
     # print(s.NaiveAlg2())
 
     # Uncomment line below for testing runtime
-    # timeit.timeit('s.NaiveAlg2()', setup='from __main__ import s', number=1000)
+    # timeit.timeit('s.NaiveAlg2()', setup='from __main__ import s', number=1)
 
     """
     Method 3: Testing RandomizedAlg3
@@ -195,7 +195,7 @@ if __name__ == "__main__":
     # print(s.RandomizedAlg3())
 
     # Uncomment line below for testing runtime
-    # timeit.timeit('s.RandomizedAlg3()', setup='from __main__ import s', number=1000)
+    # timeit.timeit('s.RandomizedAlg3()', setup='from __main__ import s', number=1)
 
     """
     Method 4: Testing RandomizedAlg4
@@ -204,7 +204,7 @@ if __name__ == "__main__":
     # print(s.RandomizedAlg4())
 
     # Uncomment line below for testing runtime
-    # timeit.timeit('s.RandomizedAlg4()', setup='from __main__ import s', number=1000)
+    # timeit.timeit('s.RandomizedAlg4()', setup='from __main__ import s', number=1)
 
 
 
