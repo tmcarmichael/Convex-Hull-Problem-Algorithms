@@ -169,21 +169,42 @@ if __name__ == "__main__":
     """
 
     s = Solution(records, dimensions, point)
-    # Method 1: Testing NaiveAlg1
+    
+    """
+    Method 1: Testing NaiveAlg1
+    """
+    # Uncomment line below for testing correctness
     # print(s.NaiveAlg1())
 
-    # timeit.timeit(s.NaiveAlg1())
-    # timeit.timeit('s.NaiveAlg1()', setup='from __main__ import s', number=500)
+    # Uncomment line below for testing runtime
+    # timeit.timeit('s.NaiveAlg1()', setup='from __main__ import s', number=1000)
 
-    # Method 2: Testing NaiveAlg2
+    """
+    Method 2: Testing NaiveAlg2
+    """
+    # Uncomment line below for testing correctness
     # print(s.NaiveAlg2())
 
-    # Method 3: Testing RandomizedAlg3
+    # Uncomment line below for testing runtime
+    # timeit.timeit('s.NaiveAlg2()', setup='from __main__ import s', number=1000)
+
+    """
+    Method 3: Testing RandomizedAlg3
+    """
+    # Uncomment line below for testing correctness
     # print(s.RandomizedAlg3())
 
-    # Method 4: Testing RandomizedAlg3
+    # Uncomment line below for testing runtime
+    # timeit.timeit('s.RandomizedAlg3()', setup='from __main__ import s', number=1000)
+
+    """
+    Method 4: Testing RandomizedAlg4
+    """
+    # Uncomment line below for testing correctness
     # print(s.RandomizedAlg4())
 
+    # Uncomment line below for testing runtime
+    # timeit.timeit('s.RandomizedAlg4()', setup='from __main__ import s', number=1000)
 
 
 
