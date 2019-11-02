@@ -17,6 +17,23 @@
 
 Note that the function, or object function call is passed as a string. The 'setup' keyword argument is your current module, in the example above it uses class s from __main__. The 'number' is for how many times to run the function. Higher number used will lead to more accurate program/function timing due to law of large numbers. Useful reference for timeit can be found here: https://docs.python.org/2/library/timeit.html 
 
+#### Results:
+
+* Since Algorithm 4 filters records to speedup runtime. Using repeated calls doesn't work for comparison. After repeated calls in alg4, the point 2d array is mostly emptied. There are three workarounds for this, one is to simple create a copy of the array for the function each time, another is to have the function read from the file and populate the array each time, and the third is to simple use a large test case and set the keyword timeit argument of __'number'__ to 1 and use a large test case. Options 1 and 2 skew the performance of Alg4. 
+
+* Using a 1000 record, 5 dimension test case generated from __'Test_Generator.py'__ with timeit __'number'__ == 1, the average results were as follows:
+
+Alg  | Runtime (seconds)
+---- | -----------------
+NaiveAlg1 | 1.299
+NaiveAlg2 | 0.316
+RandomizedAlg3 | 0.692
+RandomizedAlg4 | 0.112
+
+*HW Specs: i-7-8700K CPU @ 3.70GHz, GeForce RTX 2070*
+
+* Thoughts on results: the overhead of randomization plays a more significant role in small problem sizes, this may be why RandomizedAlg3 was slower than the naive algorithms. However, despite the randomization overhead included in the function call, RandomizedAlg4 was significantly faster than the naive algorithms. I suspect the reason for this is largely due to the filtration of records.
+
 ## Correctness
 
 * To prove correctness for randomizedAlg3 and 4 we use the following induction hypothesis, checking n records with respect to all other records gives a partial solution of size n. In the base case of the first record, we check if another point is higher in some dimension and if the current point is higher than nother point in some dimension. The base case is trivially true as we compare each record to our current one and make the same evaluation. We can show each of the following loop iterations are true by applying the same analysis, thus proving the induction hypothesis. When we extend the solution to the total size of input records, the interesting points can be identified. 
