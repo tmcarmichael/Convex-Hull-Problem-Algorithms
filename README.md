@@ -9,7 +9,13 @@
 
 * Python 'Timeit' module was used for evaluating the runtime of the four algorithms presented (two naive C++ translations, and two algorithms that utilize randomization). 
 
+### Instructions to time: 
 
+* Timeit timing is simple and can be done on CLI or by code modifications. Below is an example:
+
+```timeit.timeit('s.NaiveAlg1()', setup='from __main__ import s', number=500)```
+
+Note that the function, or object function call is passed as a string. The 'setup' keyword argument is your current module, in the example above it uses class s from __main__. The 'number' is for how many times to run the function. Higher number used will lead to more accurate program/function timing due to law of large numbers. Useful reference for timeit can be found here: https://docs.python.org/2/library/timeit.html 
 
 ## Correctness
 
