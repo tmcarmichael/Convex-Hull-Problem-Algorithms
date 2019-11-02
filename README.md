@@ -32,6 +32,8 @@ RandomizedAlg4 | 0.112
 
 *HW Specs: i-7-8700K CPU @ 3.70GHz, GeForce RTX 2070*
 
+* Update: Test case used in benchmarking included to repo as: __'TGen_Out2.txt'__.
+
 * Thoughts on results: the overhead of randomization plays a more significant role in small problem sizes, this may be why RandomizedAlg3 was slower than the naive algorithms. However, despite the randomization overhead included in the function call, RandomizedAlg4 was significantly faster than the naive algorithms. I suspect the reason for this is largely due to the filtration of records.
 
 ## Correctness
