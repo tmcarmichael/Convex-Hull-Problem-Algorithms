@@ -11,7 +11,7 @@
 
 #### Instructions to time: 
 
-* Timeit timing is simple and can be done on CLI or by code modifications. Below is an example:
+* Timeit timing is simple and can be done on CLI or by code modifications. Below is an example of running timeit in the python script (can be seen in __'Main_prog02.py'__):
 
 ```timeit.timeit('s.NaiveAlg1()', setup='from __main__ import s', number=500)```
 
