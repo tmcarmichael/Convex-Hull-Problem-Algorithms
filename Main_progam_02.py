@@ -8,6 +8,7 @@ class Solution:
 #   NaiveAlg1           Initial brute force approach
 #   NaiveAlg2           Minor optimization
 #   RandomizedAlg3      Randomized Approach
+#   RandomizedAlg4      Randomized Approach with speedup filter
 
     def __init__(self, records, dimensions, point):
     # Constructor for loading records, dimensions, and points
