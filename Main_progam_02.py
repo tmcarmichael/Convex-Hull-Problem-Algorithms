@@ -157,7 +157,7 @@ if __name__ == "__main__":
     row = 0
     with file as f:
         for line in f:
-            point[row] = map(int,line.split())
+            point[row] = list(map(int,line.split()))
             #data_hash[row] = data[row]
             row += 1
     file.close()
