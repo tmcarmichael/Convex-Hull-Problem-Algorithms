@@ -1,4 +1,4 @@
-# COSC6320-Programming-Assignment-2
+# Convex Hull Problem -- Algorithms UH
 
 
 ## Instructions:
